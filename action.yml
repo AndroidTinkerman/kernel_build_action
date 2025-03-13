@@ -6,7 +6,7 @@ branding:
   color: 'blue'
 
 inputs:
-  kernel-url:
+  kernel-url: https://github.com/LineageOS/android_kernel_samsung_universal7580.git
     description: 'Kernel Source Url'
     required: true
   depth:
@@ -18,27 +18,27 @@ inputs:
   vendor-url:
     description: 'Kernel Vendor Source Url'
     required: false
-  kernel-dir:
+  kernel-dir: kernel
     required: false
     default: kernel
   vendor-dir:
     required: false
     default: vendor
-  kernel-branch:
+  kernel-branch: lineage-16.0
     description: 'Branch name for kernel source'
     required: false
     default: main
   vendor-branch:
     required: false
     default: main
-  config:
+  config: defconfig
     description: 'configuration for building android kernel'
     required: true
     default: defconfig
-  arch:
+  arch: arm64
     required: true
     default: arm64
-  android-version:
+  android-version: 
     description: 'Android version.'
     required: false
     default: ""
@@ -126,7 +126,7 @@ inputs:
     description: '3rdparty anykernrl3 url path'
     required: false
     default: ""
-  bootimg-url:
+  bootimg-url: 
     description: 'boot.img path'
     required: false
     default: ""
