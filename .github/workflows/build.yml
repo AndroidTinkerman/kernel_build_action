@@ -15,7 +15,7 @@ jobs:
     - name: Build Kernel
       uses: dabao1955/kernel_build_action@main
       with:
-          kernel-url: https://github.com/AndroidTinkerman/android_kernel_samsung_exynos7580
+          kernel-url: https://github.com/AndroidTinkerman/android_kernel_samsung_exynos7580.git
           kernel-dir: 
           kernel-branch: 
           config: defconfig
