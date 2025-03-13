@@ -15,14 +15,14 @@ jobs:
     - name: Build Kernel
       uses: dabao1955/kernel_build_action@main
       with:
-          kernel-url: https://github.com/LineageOS/android_kernel_samsung_universal7580.git
+          kernel-url: https://github.com/AndroidTinkerman/android_kernel_samsung_universal7580.git
           kernel-dir: main
-          kernel-branch: lineage-16.0
+          kernel-branch: lineage-18.1
           config: defconfig
           arch: arm64
           aosp-gcc: true
-          aosp-clang: false
-          ksu: false
+          aosp-clang: true
+          ksu: true
           ksu-version: main
           android-version: 12
           aosp-clang-version: r383902
